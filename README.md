@@ -19,9 +19,9 @@ The user enters text or a URL in the input field.
 
 When clicking Generate QR-Code, the app checks:
 
-    ✅ If input is not empty, it calls the QR API and displays the QR code.
+- ✅ If input is not empty, it calls the QR API and displays the QR code.
 
-    ❌ If input is empty, it highlights the input and label in red for 1 second.
+- ❌ If input is empty, it highlights the input and label in red for 1 second.
 
 The QR code is displayed below the input field.
 
@@ -51,6 +51,7 @@ The QR code is displayed below the input field.
     Copy to clipboard? (Y/N): Y
     ✅ Password copied to clipboard!
   
+
 
 
 
