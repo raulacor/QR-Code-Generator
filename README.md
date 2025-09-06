@@ -37,20 +37,8 @@ The QR code is displayed below the input field.
 ---
 
   ## 👻 Example 
-    Welcome to the Password Generator tool!
-    Options:
-    1. Check Current Password Strength.
-    2. Generate a Unique Strong Password.
-    Choose 1 or 2: 2
-    Enter desired password length (minimum 8): 16
-    Insert hyphens every 4 chars for readability? (Y/N): Y
-  
-    Generated password:
-    Ab3$-kLm9-#Xy2-T0p
-    
-    Copy to clipboard? (Y/N): Y
-    ✅ Password copied to clipboard!
-  
+
+![Image](https://github.com/user-attachments/assets/e3052c0c-e016-4632-a466-dc9e5b1e2ce6)
 
 
 
