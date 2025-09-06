@@ -8,8 +8,15 @@
 </head>
 <body>
 <div class="container">
-    <p>Type in your text or URL</p>
-    <input type ="text" placeholder="Type in here" id="qrText">
+    <input 
+    type ="text"  
+    id="qrText"
+    placeholder=" "
+    autocomplete="off"
+    class="form__input" 
+    />
+
+    <label for="qrText" id="qrLabel">Input text or URL</label>
 
     <div id="imgBox">
         <img src="" id="qrImage">
@@ -23,16 +30,22 @@
 let imgBox = document.getElementById("imgBox");
 let qrImage = document.getElementById("qrImage");
 let qrText = document.getElementById("qrText");
+let qrLabel = document.getElementById("qrLabel");
 
 function GenerateQR(){
     if(qrText.value.length > 0){
         qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrText.value;
         imgBox.classList.add("show-img");
+        qrLabel.classList.add("label__accept");
 
-    }else{
+    } else {
+        
         qrText.classList.add("error");
-        setTimeout(()=>{
+        qrLabel.classList.add("error__label");
+        
+        setTimeout(() => {
             qrText.classList.remove("error");
+            qrLabel.classList.remove("error__label");
         }, 1000);
     }
 
